@@ -91,16 +91,14 @@
     </div>
   </section>
   <!-- Services -->
-  <section id="services" class="py-5">
+  <section id=" more-services" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5">Our Services</h2>
-       <div class="container">
       <div class="section-title" data-aos="fade-up">
         <h6>What We Do</h6>
         <h2>Discover Our Services</h2>
       </div>
       <div class="row g-4">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="card service-card h-100">
             <img src="im12.jpg" class="card-img-top" alt="Wedding">
             <div class="card-body text-center">
@@ -109,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="card service-card h-100">
             <img src="im10.jpg" class="card-img-top" alt="Cocktail">
             <div class="card-body text-center">
@@ -118,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="card service-card h-100">
             <img src="im11.jpg" class="card-img-top w-800" alt="Theme">
             <div class="card-body text-center">
@@ -127,17 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card service-card h-100">
-            <img src="im7.jpg" class="card-img-top" alt="Corporate">
-            <div class="card-body text-center">
-              <h5 class="card-title">Corporate Events</h5>
-              <p class="text-muted small">Professional setup for business gatherings.</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
   </section>
   
   <section class="py-5" id="services">
@@ -202,19 +190,19 @@
   </section>
 
   <!-- Gallery -->
-  <section id="gallery" class="py-5 bg-light">
+  <section id="gallery" class="py-5 ">
     
     <div class="container gallery text-center">
       <h2 class="text-center mb-5">Gallery</h2>
-      <div class="row ">
+      <div class="row my-3">
         <div class="col-6 "><img src="img1.jpg" class="w-100 rounded" alt="Gallery 1" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
         <div class="col-6 "><img src="img2.jpg" class="w-100 rounded" alt="Gallery 2" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
         </div>
-        <div class="row ">
+        <div class="row my-3">
         <div class="col-6 "><img src="img3.jpg" class="w-100 rounded" alt="Gallery 3" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
         <div class="col-6 "><img src="im4.jpg" class="w-100 rounded" alt="Gallery 4" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
        </div>
-         <div class="row">
+         <div class="row my-3">
         <div class="col-6 "><img src="im5.jpg" class="w-100 rounded" alt="Gallery 5" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
         <div class="col-6 "><img src="im6.jpg" class="w-100 rounded" alt="Gallery 6" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
       </div>
@@ -222,8 +210,8 @@
   </section>
   <!-- member -->
    <section class="team-section">
-    <div class="container">
-      <h2 class="team-title"> <u>Meet Our Team </u></h2>
+    <div class="container"  id="about">
+      <h2 class="team-title" > <u>Meet Our Team </u></h2>
       <div class="row justify-content-center gy-4">
 
         <!-- Member 1 -->
@@ -251,7 +239,40 @@
       </div>
     </div>
   </section>
+  <!-- about -->
+   <div class="container" >
+   
+<section class="venue-section ">
+ 
+  <div class="venue-image">
+    <img 
+      src="https://shantibagh.com/wp-content/uploads/2023/03/IMG-20250115-WA0039.jpg" 
+      alt="Shanti Bagh Jaipur Venue"
+      loading="lazy"
+    >
+  </div>
 
+  <div class="venue-content">
+    <h5 class="subtitle">Shanti Bagh Jaipur</h5>
+    <h2 class="title">A Perfect Venue for Every Celebration</h2>
+
+    <p>
+      Set amidst lush greenery and stunning architectural elegance, 
+      <strong>Shanti Bagh Jaipur</strong> is more than just a venue—it’s where memories are made. 
+      Designed to host weddings, receptions, corporate events, and social gatherings, 
+      it offers a versatile mix of grand indoor settings and open, scenic landscapes.
+    </p>
+
+    <p>
+      With its sprawling lawn, a magnificent banquet hall, and the stylishly intimate 
+      <strong>White Orchard</strong>, Shanti Bagh is built for those who want the perfect balance 
+      of scale, sophistication, and seamless event planning. Whether it’s an extravagant 
+      wedding or an intimate function, every event here is met with flawless service, 
+      beautiful ambiance, and a thoughtfully designed space.
+    </p>
+  </div>
+</section>
+</div>
   <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container">
@@ -284,7 +305,7 @@
   <!-- cou -->
 
   
-  <footer class="text-center bg-white">
+  <footer class="text-center">
     <div class="container">
       <p class="mb-0">© Shanti Bagh 2025 — Created by Softhunters Technology</p>
     </div>
@@ -314,7 +335,6 @@
       duration: 1000,
       once: true
     });
-     AOS.init({ duration: 1000, once: true });
       document.addEventListener("DOMContentLoaded", function() {
       const cards = document.querySelectorAll('.team-card');
       cards.forEach((card, i) => {
@@ -325,6 +345,16 @@
         }, i * 400);
       });
     });
+    //nav be button click per off ho jay
+     document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+    link.addEventListener('click', function () {
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+      var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    });
+  });
   </script>
 </body>
 </html>

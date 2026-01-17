@@ -79,16 +79,19 @@
       object-fit: cover;
       border-radius: 8px 8px 0 0;
     }
+    .gallery{
+       background-color: #FAE3C6;
+    }
     .gallery img {
+       background-color: #FAE3C6;
       cursor: pointer;
       transition: transform 0.2s ease-in;
       border-radius: 8px;
      
       
     }
-    .gallery img:hover {
-      transform: scale(1.5);
-    }
+    
+    
     .modal-img {
       width: 100%;
       height: auto;
@@ -174,7 +177,7 @@
     }
 
     .team-card {
-      background: #fff;
+      background: #c49a6c;
       border-radius: 20px;
       overflow: hidden;
       transition: all 0.5s ease;
@@ -196,23 +199,60 @@
 
     .team-info {
       padding: 25px;
-      background: #c49a6c;
+      background: #F564A9;
       transition: background 0.5s ease;
     }
 
     .team-card:hover .team-info {
-      background: #f7c478;
+      background: #c49a6c;
     }
 
     .team-info h4 {
-      color: #c49a6c;
+      color: #533B4D;
       font-weight: 700;
     }
 
     .team-info p {
       font-size: 15px;
-      color: #555;
+      color: #533B4D;
     }
+/* about */
+.venue-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.venue-image img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+}
+
+.venue-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.venue-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
 
     /* Floating animation */
     .animate-float {
@@ -229,5 +269,5 @@
       border-top: 1px solid #eee;
       background-color: #F564A9;
       padding: 20px 0;
-      color: #533B4D;
+      color: #6b6b6b;
     }
